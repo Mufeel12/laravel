@@ -1,0 +1,149 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "ankitpokhrel/tus-php": "^1.2",
+        "aweber/aweber": "^1.1",
+        "aws/aws-php-sns-message-validator": "^1.4",
+        "aws/aws-sdk-php-laravel": "^3.1",
+        "barryvdh/laravel-cors": "^0.10.0",
+        "barryvdh/laravel-debugbar": "^3.1",
+        "barryvdh/laravel-dompdf": "^0.8.6",
+        "barryvdh/laravel-ide-helper": "^2.4",
+        "benlipp/srt-parser": "^1.1",
+        "bkwld/croppa": "^4.7",
+        "dalpras/oauth2-gotowebinar": "^1.01",
+        "doctrine/dbal": "^2.5",
+        "drewm/mailchimp-api": "^2.5",
+        "elasticsearch/elasticsearch": "^6.0",
+        "exeu/apai-io": "^2.1",
+        "fabpot/goutte": "^3.2",
+        "fideloper/proxy": "~3.3",
+        "fzaninotto/faker": "^1.7",
+        "generalsoftwareinc/sendreach-php-sdk": "^3.0",
+        "gentor/activecampaign": "^1.0",
+        "geoip2/geoip2": "^2.9",
+        "google/cloud": "^0.134.0",
+        "google/cloud-translate": "^1.7",
+        "guzzlehttp/guzzle": "^6.4",
+        "happydemon/txt": "^1.0",
+        "infusionsoft/php-sdk": "^1.3",
+        "intervention/image": "^2.5",
+        "jenssegers/model": "^1.1",
+        "jeroen-g/laravel-packager": "^1.6",
+        "kalnoy/nestedset": "^4.3",
+        "laravel/cashier": "~7.0",
+        "laravel/cashier-braintree": "^2.0",
+        "laravel/framework": "5.5.*",
+        "laravel/passport": "~4.0",
+        "laravel/spark": "*@dev",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.5",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "league/fractal": "^0.17.0",
+        "league/oauth2-client": "^2.2",
+        "lusitanian/oauth": "^0.8.10",
+        "madcoda/php-youtube-api": "^1.2",
+        "mantas-done/subtitles": "^0.3.9",
+        "morrislaptop/laravel-five-package-bridges": "^1.0",
+        "oriceon/oauth-5-laravel": "^1.0",
+        "paragonie/random_compat": "2.*",
+        "php-ffmpeg/php-ffmpeg": "^0.11.0",
+        "pixelpeter/laravel5-woocommerce-api-client": "^3.0",
+        "podlove/webvtt-parser": "^1.1",
+        "predis/predis": "^1.1",
+        "probablyrational/wasabi-storage": "^1.0",
+        "rap2hpoutre/laravel-log-viewer": "^0.11.0",
+        "ricardoper/twitteroauth": "2.*",
+        "ryanwinchester/hubspot-php": "^1.1",
+        "soumen-dey/laravel-user-agent": "^1.0",
+        "spatie/browsershot": "^3.11",
+        "spatie/searchindex": "^3.4",
+        "stripe/stripe-php": "~5.0",
+        "sunra/php-simple-html-dom-parser": "^1.5",
+        "teodortalov/citrix": "^1.2",
+        "torann/geoip": "^1.0",
+        "vinkla/pusher": "^4.0",
+        "vinkla/vimeo": "^3.7",
+        "watson/rememberable": "^2.0"
+    },
+    "require-dev": {
+        "filp/whoops": "~2.0",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "files": [
+            "app/Http/Helpers/iContactApi.php",
+            "app/Http/Helpers/Media.php",
+            "app/Http/Helpers/ArrayOperations.php",
+            "app/Http/Helpers/NumberOperations.php",
+            "app/Http/Helpers/HttpOperations.php",
+            "app/Http/Helpers/TimeOperations.php",
+            "app/Http/Helpers/HtmlParseOperations.php",
+            "app/Http/Helpers/StringOperations.php",
+            "app/Http/Helpers/LogActivity.php",
+            "vendor/aweber/aweber/aweber_api/aweber.php",
+            "app/Http/Helpers/Benchmark/BMEAPI.class.php"
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories",
+            "app/Support"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Spoowy\\": "packages/spoowy/src/",
+            "Spoowy\\VideoAntHelper\\": "packages/spoowy/VideoAntHelper/src/",
+            "Spoowy\\Commentable\\": "packages/spoowy/src/Laravel-Commentable/src/",
+            "Spoowy\\ServiceProvider\\": "packages/spoowy/src/ServiceProvider/src/",
+            "Kalnoy\\Nestedset\\": "packages/kalnoy/nestedset/src/",
+            "Aws\\": "packages/aws",
+            "Aws\\Amazon\\": "packages/aws/amazon/src",
+            "EbayApi\\": "packages/ebayapi",
+            "EbayApi\\Ebay\\": "packages/ebayapi/ebay/src",
+            "ShopifyApi\\": "packages/shopifyapi",
+            "ShopifyApi\\Shopify\\": "packages/shopifyapi/shopify/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./spark"
+        }
+    ]
+}

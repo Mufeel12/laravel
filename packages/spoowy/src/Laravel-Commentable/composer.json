@@ -1,0 +1,5 @@
+{
+    "require": {
+        "kalnoy/nestedset": "^4.3"
+    }
+}

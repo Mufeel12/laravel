@@ -1,0 +1,20 @@
+const path = 'https://adilo.bigcommand.io/',
+	popover = document.querySelector('.motion_popover');
+
+
+var width       = popover.getAttribute('data-width'),
+    height      = popover.getAttribute('data-height'),
+    videoId     = popover.getAttribute('data-id'),
+    text        = popover.getAttribute('data-text'),
+    experiment  = popover.getAttribute('data-experiment'),
+    expQuery    = experiment == 'true' ? '&ex=true' : '',
+    url         = `${path}watch/${videoId}`,
+    type        = popover.getAttribute('data-type');
+    videoFrame  = `<iframe class='popover_iframe' width="${width}" height="${height}" allowtransparency="true" src="${url}" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen scrolling="no" "></iframe>`;
+
+
+if (popover) {
+	popover.style.width = width;
+	popover.style.height = height;
+	popover.innerHTML = videoFrame;
+}

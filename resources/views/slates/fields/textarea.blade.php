@@ -1,0 +1,1 @@
+{!! Form::textarea($field['name'], '', ['class' => 'form-control', 'id' => $field['name'], 'value' => (isset($slate->fields[$field['name']]['value']) ? $slate->fields[$field['name']]['value'] : '')]) !!}

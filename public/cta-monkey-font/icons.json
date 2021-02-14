@@ -1,0 +1,51 @@
+{
+  "font-name": "CTAMonkey",
+  "root-dir": "./node_modules/material-design-icons/",
+  "icons": [
+    {
+      "name": "keyboard-backspace",
+      "svg": "hardware/svg/production/ic_keyboard_backspace_24px.svg"
+    },
+    {
+      "name": "arrow-back",
+      "svg": "navigation/svg/design/ic_arrow_back_18px.svg"
+    },
+    {
+      "name": "arrow-drop-down",
+      "svg": "navigation/svg/production/ic_arrow_drop_down_18px.svg"
+    },
+    {
+      "name": "arrow-drop-up",
+      "svg": "navigation/svg/design/ic_arrow_drop_up_18px.svg"
+    },
+    {
+      "name": "arrow-forward",
+      "svg": "navigation/svg/design/ic_arrow_forward_18px.svg"
+    },
+    {
+      "name": "check",
+      "svg": "navigation/svg/production/ic_check_18px.svg"
+    },
+    {
+      "name": "expand-more",
+      "svg": "navigation/svg/production/ic_expand_more_18px.svg"
+    },
+    {
+      "name": "expand-less",
+      "svg": "navigation/svg/production/ic_expand_less_18px.svg"
+    },
+    {
+      "name": "more-horiz",
+      "svg": "navigation/svg/production/ic_more_horiz_18px.svg"
+    },
+    {
+      "name": "add",
+      "svg": "content/svg/production/ic_add_24px.svg"
+    },
+    {
+      "name": "rounded-check",
+      "svg": "rounded-check.svg",
+      "root-dir": "./custom-icons/"
+    }
+  ]
+}

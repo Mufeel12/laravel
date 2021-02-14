@@ -1,0 +1,8 @@
+{
+  "/js/app.js": "/js/app.js",
+  "/mix.js": "/mix.js",
+  "/css/app.css": "/css/app.css",
+  "/dist/script.js": "/dist/script.js",
+  "/dist/devScript.js": "/dist/devScript.js",
+  "/dist/proScript.js": "/dist/proScript.js"
+}
